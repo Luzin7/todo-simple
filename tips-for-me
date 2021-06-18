@@ -1,0 +1,13 @@
+da pra usar : no lugar do v-bind:--><!--: = Modify data by code
+
+da pra usar @ no lugar do v-on:--><!--@ = Modify code by data
+
+sempre ao importar algum componente você deve mostrar o caminho pro vuejs (import component from '...')
+
+Sempre ao criar um router/vuex vai fazer esse template: Importar as ferramentas que vão ser utilizadas no .js (Vue, router...);
+ Fazer o sistema do js e vue usar a ferramenta ('Vue.use()');
+ Criar as rotas (const routes = [{}]); // Criar a store  (const store = new Vuex.store({}))
+ Exportar as rotas e/ou router (sempre criando uma nova instancia dele);
+
+router-view indica pro template da página principal o local no qual os demais componentes
+carregados através de rotas devem ser renderizados.
