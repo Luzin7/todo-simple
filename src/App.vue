@@ -17,5 +17,7 @@ export default {
 </script>
 
 <style>
-
+.bg_Color{
+  background-color: #17202A;
+}
 </style>

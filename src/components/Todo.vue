@@ -8,11 +8,11 @@
     </div>
     <div class="tile-action">
       <button @click="$emit('toggle', todo)" class="btn btn-link">
-        <span v-if="todo.checked">Desmarcar</span>
-        <span v-else>Concluído</span>
+        <span v-if="todo.checked" class="undone">Undone</span>
+        <span v-else class="done">Done</span>
       </button>
       <button @click="$emit('remove', todo)" class="btn btn-link">
-        <span class="text-error">Remover</span>
+        <span class="remove">Remove</span>
       </button>
     </div>
   </div>
@@ -27,6 +27,12 @@ export default {
 </script>
 
 <style scoped>
+.done, .undone{
+  color: #EBEDEF;
+}
+.remove{
+  color: #D98880;
+}
 .checked {
   text-decoration: line-through;
   color: lightgray;
