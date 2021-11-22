@@ -31,11 +31,11 @@ export default {
   color: #EBEDEF;
 }
 .remove{
-  color: #D98880;
+  color: #ff5252;
 }
 .checked {
   text-decoration: line-through;
-  color: lightgray;
+  color: #474787;
 }
 
 </style>
